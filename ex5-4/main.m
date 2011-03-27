@@ -14,7 +14,7 @@
 #import "Calc.h"
 
 NSString* getInput(int* ptrValue, char* userInput) {
-    scanf("%i %s", &(*ptrValue), userInput);
+	scanf("%i %s", &(*ptrValue), userInput);
 	NSRange range = NSMakeRange([[NSString stringWithUTF8String:userInput] length] - 1, 1);
 	return [[NSString stringWithUTF8String:userInput] substringWithRange:range];
 }
@@ -74,5 +74,5 @@ int main(int argc, char *argv[])
 	NSLog(@"Exiting calculator...\n");
 
 	return 0;
-    // return NSApplicationMain(argc,  (const char **) argv);
+	// return NSApplicationMain(argc,  (const char **) argv);
 }
